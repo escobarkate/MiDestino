@@ -1,0 +1,41 @@
+
+login-home {
+
+.login-page{
+    //Centrar todo el contenido verticalmente
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;  //toma todo el tamaño de la pantalla
+                   //% todo el espacio
+                   //vh toda la pantalla del dispositivo
+}
+
+.logo{
+    
+    background-image: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xla1/v/t1.0-9/14641972_1851901018372348_3107195941840858726_n.jpg?oh=ae9b45f318e333166647f3265d7c188f&oe=58682EB8&__gda__=1486166902_b3094245b555b6631cf14420ac84a3e0);
+    height: 22% ;
+    width: 52%;
+    border-radius: 15px 15px 15px 15px;
+    align-content: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+ .login-background{
+     //imagen que de fondo que ocupe todo el espacio
+     background-image: url("http://www.turborevista.com/images/stories/remote/http--www.aliciasornosa.com-wp-content-uploads-2012-06-to-Alaska-post-11110.jpg");
+     background-color: white;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover; //use el mayor espacio
+
+}
+.login-tittle{
+    color:white; 
+    justify-content: center;
+    text-align: center;
+    text-shadow: 5px 5px 5px orange;
+}
+
+}

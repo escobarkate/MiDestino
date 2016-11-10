@@ -1,0 +1,57 @@
+<ion-header>
+
+    <ion-navbar color="yellow">
+
+        <ion-title class="title">
+            Mi Destino
+            <ion-icon name="bus"></ion-icon>
+        </ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-only (click)="goTologin()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
+
+    <ion-toolbar color="green" class="toolbar">
+        <ion-title>Pago</ion-title>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <div class="logo"> </div>
+    <div>
+        <ion-item class="item">
+            <ion-label stacked color="dark"> Nombre del titular</ion-label>
+            <ion-input type="text" [(ngModel)]="usuario.nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked color="dark"> Cedula</ion-label>
+            <ion-input type="number" [(ngModel)]="usuario.cedula"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked color="dark"> Numero de cuenta</ion-label>
+            <ion-input type="number" [(ngModel)]="usuario.cuenta"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked color="dark"> Codigo de seguridad</ion-label>
+            <ion-input type="password" [(ngModel)]="usuario.password"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked color="dark"> Cuotas</ion-label>
+            <ion-input type="number" min="1" max="3" [(ngModel)]="usuario.cuotas"></ion-input>
+        </ion-item>
+    </div>
+
+    <div >      
+    <button ion-button large icon-only block color="orange" (click)="valido()">
+        <ion-icon name="card" item-left></ion-icon>
+         PAGAR
+   </button>
+    </div>
+
+
+</ion-content>

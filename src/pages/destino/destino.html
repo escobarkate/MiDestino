@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+
+    <ion-title class="title">
+      Mi Destino
+      <ion-icon name="bus"></ion-icon>
+    </ion-title>
+
+    <!--<ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>-->
+  </ion-navbar>
+
+  <ion-toolbar color="green" class="toolbar">
+    <ion-title>Selecciona el destino</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header> Presione la ciudad deseada</ion-list-header>
+     <ion-item *ngFor="let c of data"  (click)="goToRuta(c.idciudad)">
+      <ion-thumbnail item-left>
+        <img src="{{c.imagen}}">
+      </ion-thumbnail>
+      <h2>{{c.nombre}} </h2>
+    </ion-item>
+
+
+<!--
+    <ion-item (click)="goToRuta()">
+      <ion-thumbnail item-left>
+        <img src="http://hotelesms.com/wp-content/uploads/2015/05/bogota-destino.jpg">
+      </ion-thumbnail>
+      <h2>Bogotá</h2>
+    </ion-item>
+    <ion-item (click)="goToRuta()">
+      <ion-thumbnail item-left>
+        <img src="http://www.da-leos.com/image/cache/data/California/CALI%20Pink-500x500.png">
+      </ion-thumbnail>
+      <h2>Cali</h2>
+    </ion-item>
+    <ion-item (click)="goToRuta()">
+      <ion-thumbnail item-left>
+        <img src="http://hotelesms.com/hotel-ms-herreria-popayan/wp-content/uploads/sites/14/2015/10/popayan3_500x500.jpg">
+      </ion-thumbnail>
+      <h2>Popayán</h2>
+    </ion-item>-->
+
+
+  </ion-list>
+</ion-content>

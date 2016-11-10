@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+
+    <ion-title class="title">
+      Mi Destino
+      <ion-icon name="bus"></ion-icon>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar color="green" class="toolbar">
+    <ion-title>VER HORARIOS</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content >
+  <ion-list>
+     <ion-list-header>Seleccione el horario de su interes</ion-list-header>
+    
+    <ion-item *ngFor="let c of data" (click)="goToPuestos(c.vfecha,c.vidBus,c.idhorario)">
+      <ion-thumbnail item-left>
+        <img src="{{c.imagen}}">
+      </ion-thumbnail>
+      <ion-grid>
+        <ion-row>
+          <ion-col width-50>
+            <h1 color="dark"> {{c.vhora}}</h1>
+            <p>{{c.empresa}}</p>
+            <p>5 cupos </p>
+          </ion-col>
+          <ion-col width-50 class="precio"  >
+            <br>
+            <h1 color="dark"> ${{c.precio}}</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <!--<ion-item (click)="goToPuestos()">
+      <ion-thumbnail item-left>
+        <img src="https://i1.sndcdn.com/artworks-000114518737-xntw4e-t500x500.jpg">
+      </ion-thumbnail>
+      <ion-grid>
+        <ion-row>
+          <ion-col width-50>
+            <h1 color="dark">4:00 PM</h1>
+            <p>Velotax S.A</p>
+            <p>5 cupos </p>
+          </ion-col>
+          <ion-col width-50 class="precio" >
+            <br>
+            <h1 color="dark"> $62.000</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>-->
+  </ion-list>
+</ion-content>

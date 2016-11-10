@@ -1,0 +1,145 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+
+    <ion-title class="title">
+      Mi Destino
+      <ion-icon name="bus"></ion-icon>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToLogin()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar color="green" class="toolbar">
+    <ion-title>Escoge tu asiento</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding class="action-sheets-basic-page">
+ <div class="puestos-page" >
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50>
+          <ion-label class="label1"> Disponible
+            <ion-icon name="egg" color="yellow" item-left></ion-icon>
+
+          </ion-label>
+        </ion-col>
+        <ion-col width-50>
+          <ion-label class="label"> Ocupado
+            <ion-icon name="egg" color="primary" item-left></ion-icon>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="logo-bus"> </div>
+
+  
+  <ion-grid >
+    <ion-row>
+      <ion-col width-18>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color1" ion-button>01</button>
+      </ion-col>
+      <ion-col width-15>
+        <button  [color]="color2"ion-button>02</button>
+      </ion-col>
+      <ion-col width-10>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color3" ion-button>03</button> 
+      </ion-col>
+      <ion-col width-15>
+        <button  [color]="color4" ion-button>04</button>
+      </ion-col>
+      <ion-col width-12>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-18>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color5" ion-button>05</button>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color6" ion-button>06</button>
+      </ion-col>
+      <ion-col width-10>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color7" ion-button>07</button>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color8" ion-button>08</button>
+      </ion-col>
+      <ion-col width-12>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-18>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color9" ion-button>09</button>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color10"ion-button>10</button>
+      </ion-col>
+      <ion-col width-10>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color11" ion-button>11</button>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color12" ion-button>12</button>
+      </ion-col>
+      <ion-col width-12>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-18>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color13" ion-button>13</button>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color14" ion-button>14</button>
+      </ion-col>
+      <ion-col width-10>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color15" ion-button>15</button>
+      </ion-col>
+      <ion-col width-15>
+        <button [color]="color16" ion-button >16</button>
+      </ion-col>
+      <ion-col width-12>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+     <ion-item>
+      <ion-label >Puesto deseado</ion-label>
+      <ion-input  required  type="number" min="1" max="16" [(ngModel)]="puesto.idpuesto"></ion-input>
+     </ion-item>
+
+     <br>
+
+  <!--<button ion-button  large color="green" (click)="Verificar(puesto.idpuesto)">Reservar</button>-->
+  <br>
+  <button ion-button large color="green" (click)="Verificar(puesto.idpuesto)"> Comprar </button>
+   <!--<button ion-button block (click)="openMenu()">
+    Show Action Sheet
+  </button>-->
+ </div>
+</ion-content>

@@ -1,0 +1,110 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+   
+    <!--<ion-buttons start>
+      <button ion-button>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>-->
+   
+   <button ion-button menuToggle (click)="goToMenu()">
+      <ion-icon name="menu" ></ion-icon>
+    </button>
+
+
+    <ion-title class="title">
+      Mi Destino
+      <ion-icon name="bus"></ion-icon>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToLogin()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar color="green" class="toolbar">
+    <ion-title>Selecciona tu ruta</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <div class="ruta-page">
+    <div class="logo"> </div>
+    <ion-item>
+      <ion-label color="orange"> TRAYECTO </ion-label>
+    </ion-item>
+    <ion-list>
+      <!--<ion-list-header> Trayecto</ion-list-header>-->
+      <ion-item class="item">
+        <ion-icon name="pin" item-left></ion-icon>
+        <h2>Escoge el origen</h2>
+        <!--<p> Cali </p>-->
+        <button ion-button icon-only item-right clear (click)="goToOrigen()"> 
+            <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </ion-item>
+
+      <ion-item >
+        <ion-icon name="navigate" item-left></ion-icon>
+        <h2>Selecciona el destino</h2>
+        <!--<p> Bogotá </p>-->
+        <button ion-button icon-only item-right clear (click)="goToDestino()"> 
+            <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-item>
+      <ion-label color="orange"> FECHA </ion-label>
+    </ion-item>
+
+    <!--<ion-grid>
+      <ion-row>
+        <ion-col width-30>
+          <ion-item>
+            <ion-icon name="calendar" item-left></ion-icon>
+            <h2>Día</h2>
+            <p> 1 </p>
+            <ion-icon name="arrow-forward" item-right></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col width-30>
+          <ion-item>
+            <h2>Mes</h2>
+            <p> Enero </p>
+            <ion-icon name="arrow-forward" item-right></ion-icon>
+          </ion-item>
+
+        </ion-col>
+        <ion-col width-30>
+          <ion-item>
+            <h2>Año</h2>
+            <p> 2016 </p>
+            <ion-icon name="arrow-forward" item-right></ion-icon>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>-->
+
+    <ion-item>
+      <label class="item item-input">
+         <ion-icon name="calendar" item-left></ion-icon>
+         <input type="date">
+      </label>
+    </ion-item>
+
+
+    <button ion-button icon-only color="green" class="button" (click)="goToHorario()">
+      BUSCAR
+      <ion-icon name="search"></ion-icon>
+    </button>
+
+  </div>
+</ion-content>

@@ -1,0 +1,77 @@
+<ion-header>
+
+    <ion-navbar color="yellow">
+
+        <ion-title class="title">
+            Mi Destino
+            <ion-icon name="bus"></ion-icon>
+        </ion-title>
+
+        <!--<ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>-->
+    </ion-navbar>
+
+    <ion-toolbar color="green" class="toolbar">
+        <ion-title>TUS TIQUETES</ion-title>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-list>
+
+        <!--<ion-item *ngFor="let c of data" >
+      
+      <h2>{{c.id}} </h2>
+    </ion-item>-->
+        <!--<ion-list-header>Lista de tiquetes comprados</ion-list-header>-->
+        <ion-item *ngFor="let c of data">
+            <h6>Lista de {{c.modo}}s</h6>
+            <ion-thumbnail item-left>
+                <img src="https://i1.sndcdn.com/artworks-000114518737-xntw4e-t500x500.jpg">
+            </ion-thumbnail>
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-50>
+                        <h1 color="dark"> {{c.idTiquete}}</h1>
+                        <h1 color="dark"></h1>
+                        <p>{{c.origen}}</p>
+                        <p>{{c.destino}}</p>
+                    </ion-col>
+                    <ion-col width-50 class="precio">
+                        <br>
+                        
+                        <p>{{c.fecha}}</p>
+                        <p>{{c.hora}}</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+
+        <!--<ion-item >
+            <ion-thumbnail item-left>
+                <img src="https://i1.sndcdn.com/artworks-000114518737-xntw4e-t500x500.jpg">
+            </ion-thumbnail>
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-50>
+                        <h1 color="dark"> #2</h1>
+                        <h1 color="dark"></h1>
+                        <p>Cali</p>
+                        <p>Bogotá</p>
+                    </ion-col>
+                    <ion-col width-50 class="precio">
+                        <br>
+                        
+                        <p>02/11/16</p>
+                        <p>4:00PM</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>-->
+
+    </ion-list>
+</ion-content>

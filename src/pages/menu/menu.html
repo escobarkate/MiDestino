@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+    
+    <ion-title class="title">
+      Mi Destino
+      <ion-icon name="bus"></ion-icon>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToLogin()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar color="green" class="toolbar" >
+    <ion-title>Menú</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding class="list-background">
+
+    <div class="menu-page">
+
+        <div class="logo"> </div>
+        <button ion-button block large color="yellow" (click)="goToRuta()">Comprar o reservar </button>
+        <button ion-button block large color="gray" (click)="goToReserva()">Ver tus reservas</button>
+        <button ion-button block large color="yellow" (click)="goToTiquete()">Ver tus tiquetes</button>
+    </div>
+
+
+</ion-content>

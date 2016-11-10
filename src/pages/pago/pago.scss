@@ -1,0 +1,36 @@
+pago-home{
+    .pago-page{
+       
+    //Centrar todo el contenido verticalmente
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;  //toma todo el tamaño de la pantalla
+                   //% todo el espacio
+                   //vh toda la pantalla del dispositivo
+}
+    
+    .toolbar{
+    text-align: center;
+    }
+
+    .title{
+    text-align: center;
+    }
+    .logo{
+    
+    background-image: url(http://data.bloggif.com/distant/user/store/2/4/b/e/f3e61584e9a76b44f5f4f2583600eb42.jpeg);
+    height: 20% ;
+    width: 90%;
+    border-radius: 15px 15px 15px 15px;
+    align-content: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    }
+    .button{
+        justify-content: center;
+        //width: 70%;
+        align-content: center;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,34 @@
+ruta2-home {
+    
+    .logo{
+    
+    background-image: url(https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xla1/v/t1.0-9/14641972_1851901018372348_3107195941840858726_n.jpg?oh=ae9b45f318e333166647f3265d7c188f&oe=58682EB8&__gda__=1486166902_b3094245b555b6631cf14420ac84a3e0);
+    height: 22% ;
+    width: 50%;
+    border-radius: 15px 15px 15px 15px;
+    align-content: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    }
+
+    .ruta-page{
+    //Centrar todo el contenido verticalmente
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;  //toma todo el tamaño de la pantalla
+                   //% todo el espacio
+                   //vh toda la pantalla del dispositivo
+}
+.button{
+    justify-content: center;
+}
+
+.toolbar{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+}

@@ -1,0 +1,74 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+
+    <ion-title class="title">
+      Mi Destino
+      <ion-icon name="bus"></ion-icon>
+    </ion-title>
+
+    <!--<ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>-->
+  </ion-navbar>
+
+  <ion-toolbar color="green" class="toolbar">
+    <ion-title>Registrar</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding >
+
+  <div class="logo"> </div>
+
+  <ion-list>
+    
+     <ion-label color="gray" class="title"><h6> INGRESE LOS SIGUIENTES DATOS: </h6></ion-label>
+    
+    <ion-item>
+      <ion-label floating>Nombre Completo</ion-label>
+      <ion-input  required  type="text" [(ngModel)]="usuario.nombre" ></ion-input>
+      
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Cedula </ion-label>
+      <ion-input required type="number" [(ngModel)]="usuario.cedula"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Correo </ion-label>
+      <ion-input required type="email" [(ngModel)]="usuario.correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Usuario</ion-label>
+      <ion-input required type="text" [(ngModel)]="usuario.user"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="usuario.password" required></ion-input>
+    </ion-item>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col width-35>
+         
+        </ion-col>
+        <ion-col width-50>
+          <button ion-button icon-only color="green" (click)="valido()">
+              Enviar Datos 
+             <ion-icon name="send"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col width-15>  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+
+
+  </ion-list>
+</ion-content>

@@ -1,0 +1,121 @@
+<ion-header>
+
+  <ion-navbar color="yellow">
+
+    <button ion-button menuToggle (click)="goToMenu()">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title class="title">
+      Mi Destino
+      <ion-icon name="bus"></ion-icon>
+    </ion-title>
+
+    <!--<ion-buttons end>
+      <button ion-button icon-only (click)="goToMenu()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>-->
+<ion-buttons end>
+      <button ion-button icon-only (click)="goToLogin()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar color="green" class="toolbar">
+    <ion-title>Confirmación de Pago</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+<!--<ion-list-header> Presione la ciudad deseada</ion-list-header>-->
+  <ion-item *ngFor="let c of data" >
+      <button ion-button large full large clear class="btn"> Tiquete #{{c.idTiquete}}
+      <br>  
+      </button>
+  
+      <ion-toolbar color="green" class="toolbar">
+       <ion-title>Información del viaje</ion-title>
+      </ion-toolbar>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-40>
+        <ion-label color="orange"> Compañía: </ion-label>
+      </ion-col>
+      <ion-col width-60>
+        <ion-label>{{c.empresa}} </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-40>
+        <ion-label color="orange"> Origen: </ion-label>
+      </ion-col>
+      <ion-col width-60>
+        <ion-label> {{c.origen}} </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-40>
+        <ion-label color="orange"> Destino: </ion-label>
+      </ion-col>
+      <ion-col width-60>
+        <ion-label> {{c.destino}} </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-40>
+        <ion-label color="orange"> Fecha: </ion-label>
+      </ion-col>
+      <ion-col width-60>
+        <ion-label>{{c.fecha}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-40>
+        <ion-label color="orange"> Hora: </ion-label>
+      </ion-col>
+      <ion-col width-60>
+        <ion-label>{{c.fecha}}</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-toolbar color="green" class="toolbar">
+    <ion-title>Información del pasajero</ion-title>
+  </ion-toolbar>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50>
+        <ion-label color="orange"> Pasajero: </ion-label>
+      </ion-col>
+      <ion-col width-50>
+        <ion-label>{{c.nombre}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <ion-label color="orange"> Precio: </ion-label>
+      </ion-col>
+      <ion-col width-50>
+        <ion-label>$ {{c.precio}}</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <ion-label color="orange"> Puesto: </ion-label>
+      </ion-col>
+      <ion-col width-50>
+        <ion-label>{{c.silla}} </ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-item>
+</ion-list>
+
+</ion-content>

@@ -1,0 +1,54 @@
+puestos-home{
+   .puestos-page{
+    //Centrar todo el contenido verticalmente
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;  //toma todo el tamaño de la pantalla
+                   //% todo el espacio
+                   //vh toda la pantalla del dispositivo
+}
+   
+   
+    .logo-bus{
+    background-image: url(https://fb-s-d-a.akamaihd.net/h-ak-xlp1/v/t1.0-9/14705782_1855414001354383_1632208131235804813_n.jpg?oh=8132bc723ada8b47ff17e52cc3fed300&oe=589D8046&__gda__=1486668612_6f4ddc1aad807ab2129846f49f9f4e79);
+    height: 10% ;
+    width: 95%;
+    align-content: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    }
+    .toolbar{
+    text-align: center;
+    }
+
+    .title{
+    text-align: center;
+    }
+    .label1{
+        text-align: center;
+        color: gray;
+    }
+    .label{
+        text-align: center;
+        color: gray;
+    }
+ 
+    
+}
+
+.action-sheets-basic-page {
+  .ion-md-share {
+    color: #ED4248;
+  }
+  .ion-md-arrow-dropright-circle {
+    color: #508AE4;
+  }
+  .ion-md-heart-outline {
+    color: #31D55F;
+  }
+  .action-sheet-cancel ion-icon,
+  .action-sheet-destructive ion-icon {
+    color: #757575;
+  }
+}

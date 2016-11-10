@@ -1,0 +1,29 @@
+<ion-content padding class="login-background">
+   
+   
+    <div class="login-page">
+       
+        <div class="logo"> </div>
+        <h1 class="login-tittle"><b>Iniciar Sesion</b></h1>
+        <ion-item class="item">
+            <ion-label floating> Usuario</ion-label>
+            <ion-input type="text" [(ngModel)]="usuario.user"  ></ion-input>
+            
+        </ion-item>
+        <ion-item>
+            <ion-label floating> Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="usuario.password" ></ion-input>
+        </ion-item>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col width-50>
+                    <button  class="btn-registrar" color="orange" ion-button full (click)="goToRegistrar()" >Registrar</button>
+                </ion-col>
+                <ion-col width-50>
+                    <button class="btn-Entrar" color="green" ion-button full (click)="validar()" >Entrar</button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>
